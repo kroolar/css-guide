@@ -1,0 +1,58 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/position -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="red">
+    <div class="yellow"></div>
+  </div>
+  <div class="blue"></div>
+  <div class="green"></div>
+</body>
+</html>
+
+<style>
+  body {
+    height: 200vh;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .red {
+    background-color: tomato;
+    position: fixed;
+    /* position: relative;
+    left: 10px;
+    top: 10;
+    z-index: 10; */
+  }
+
+  .yellow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+  }
+
+  .blue {
+    /* position: absolute;
+    left: 0;
+    top: 10px; */
+    background-color: steelblue;
+  }
+
+  .green {
+    background-color: seagreen;
+  }
+</style>
