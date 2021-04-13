@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="slider"></div>
+  </div>
+</body>
+</html>
+
+<style>
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 600px;
+    height: 50px;
+    border: 4px solid black;
+    transition: 200ms;
+  }
+
+  .slider {
+    background-color: green;
+    height: 50px;
+    width: 10%;
+    margin-left: 0px;
+    transition: .5s;
+  }
+
+  .slider:hover {
+    width: 100%;
+    background-color: red;
+  }
+</style>

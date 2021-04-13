@@ -12,12 +12,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="red">
-      <div class="yellow"></div>
-      <div class="purple"></div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3 asdassd
     </div>
-    <div class="blue"></div>
-    <div class="green"></div>
   </div>
 </body>
 </html>
@@ -26,44 +24,120 @@
   * {
     margin: 0;
     box-sizing: border-box;
+    font-family: Ubuntu;
   }
 
   .container {
+    background-color: purple;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: auto;
   }
 
-  .red {
+  .item {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    /* font-size: 40px; */
+    /* line-height: 100px; */
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    color: red;
+  }
+
+  /* DISPLAY */
+  .container {
     display: flex;
+    /* display: inline-flex; */
+  }
+
+  /* DIRECTION */
+  .container {
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+  }
+
+  /* WRAP */
+  .container {
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+  }
+
+  .item {
+    /* width: 45%; */
+    /* width: 10000000px; */
+  }
+
+  /* justify-content */
+  .container {
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+  }
+
+  /* align-items */
+  .container {
+    /* height: 400px; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+  }
+
+  .item:first-child {
+    /* height: 300px; */
+  }
+
+  .item:nth-child(3) {
+    /* height: 200px; */
+  }
+
+  /* Properties for flex items */
+
+  /* Order */
+  .item:first-child {
+    /* order: 2; */
+  }
+
+  .item:last-child {
+    /* order: -10; */
+  }
+
+  /* flex-grow */
+  .item {
+    /* flex-grow: 1; */
+  }
+
+  .item:first-child {
+    /* flex-grow: 1; */
+  }
+
+  .item:nth-of-type(2) {
+    /* flex-grow: 2; */
+  }
+
+  .item:last-child {
+    /* flex-grow: 4; */
+  }
+
+  /* align-self */
+  .container {
+    flex-direction: column;
+    height: 400px;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 100px;
-    background-color: red;
   }
 
-  .blue {
-    width: 40%;
-    height: 100px;
-    background-color: blue;
+  .item:first-child {
+    align-self: flex-end;
   }
 
-  .green {
-    width: 40%;
-    height: 100px;
-    background-color: green;
-  }
-
-  .yellow {
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
-  }
-
-  .purple {
-    width: 50px;
-    height: 50px;
-    background-color: purple;
-  }
 </style>
