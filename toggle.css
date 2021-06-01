@@ -1,0 +1,52 @@
+.toggle {
+  background-color: #f0f0f0;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 4rem;
+  border: 2px solid #c8c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.toggle__button {
+  width: 45%;
+  height: 90%;
+  background-color: #464646;
+  border-radius: 50%;
+  margin-left: 5%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.toggle--dark-mode {
+  background-color: #464646;
+  border-color: #646464;
+}
+
+.toggle--dark-mode .toggle__button {
+  background-color: gainsboro;
+  margin-left: 50%;
+}
+
+.box {
+  margin-top: 100px;
+  width: 50%;
+  height: 10rem;
+  border-radius: 10px;
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+
+.box--dark-mode {
+  background-color: red;
+}
+/*# sourceMappingURL=toggle.css.map */

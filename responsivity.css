@@ -1,0 +1,79 @@
+html {
+  font-size: 12px;
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: ubuntu;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (orientation: landscape) {
+  .page {
+    display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.box-one {
+  width: 100rem;
+  height: 300px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 1600px) {
+  .box-one {
+    background-color: blue;
+  }
+}
+
+.box-two {
+  width: 0;
+  height: 300px;
+  background-color: blue;
+}
+
+.info {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .info {
+    display: block;
+  }
+}
+/*# sourceMappingURL=responsivity.css.map */

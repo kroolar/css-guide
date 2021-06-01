@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./toggle.css">
+</head>
+<body>
+  <div
+    class="toggle"
+    onclick="toggleDarkMode()"
+  >
+    <div class="toggle__button"></div>
+  </div>
+
+  <div class="box" dark-mode>
+    <p class="box__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+</body>
+</html>
+
+<script>
+  // const toggle = () => document.querySelector('.toggle').classList.toggle('toggle--on')
+
+  const toggleDarkMode = () => {
+    const elements = document.querySelectorAll("*")
+    
+    elements.forEach(element => {
+      const className = element.classList[0]
+
+      element.classList.toggle(`${className}--dark-mode`)
+    });
+  }
+</script>
+
+<style>
+  :root {
+    --blue: #0000FF;
+  }
+
+  body {
+    background-color: var(--blue);
+  }
+</style>

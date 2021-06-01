@@ -1,0 +1,48 @@
+$sm: 200px
+$md-screen: 1024px
+$lg: 1600px
+
+html
+  font-size: 12px
+
+  @media (min-width: $lg)
+    font-size: 18px
+
+*
+  box-sizing: border-box
+  font-family: ubuntu
+
+.page
+  display: flex
+  flex-direction: column
+
+  @media (orientation: landscape)
+    display: none
+
+  @media (min-width: $lg)
+    flex-direction: row    
+
+.box-one
+  width: 100rem
+  height: 300px
+  background-color: red
+  color: white
+  text-align: center
+  display: flex
+  align-items: center
+  padding: 1rem
+  font-size: 1rem
+
+  @media (min-width: $lg)
+    background-color: blue 
+
+.box-two
+  width: 0
+  height: 300px
+  background-color: blue
+
+.info
+  display: none
+
+  @media (orientation: landscape)
+    display: block

@@ -1,34 +1,70 @@
 <!-- http://getbem.com/ -->
 
-1. popularna konwencja twrozenia nazywania klas 2. Oparty o 3 typy komponentów B
-- Block E - Element M - Modifier Bem stosuje się żeby uniknąć chaosu związnaego
-ze specyficznoscią. Jeśli używasz identyfikatorów, klass i selektorów to w
-większym projekcie ci się wszystko pomiesza co i jak A tak zawsze masz tą
-samą specyficznoscią Block - inaczej komponent np. nav Element - część
-komponentu, która jest zależna od bloku i nie występuje poza blokiem Modifier -
-niestandardowy blok lub element
-
+<!-- Example of block end element -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.sass">
-</head>
+  <body class="page page--red">
+    <nav class="page__nav nav">
+      <div class="nav__element">
+        <div class="nav__icon"></div>
+        <div class="nav__link"></div>
+      </div>
+    </nav>
 
-<body class="main">
-  <nav class="main__nav nav">
-    <div class="nav__item"></div>
-    <div class="nav__item"></div>
-    <div class="nav__item nav__item--disabled"></div>
-  </nav>
+    <div class="page__content">
+      <div class="page__some-element"></div>
+    </div>
 
-  <section class="main__section"></section>
+    <table class="table">
+      <tr class="table__row">
+        <td class="table__cell"></td>
+        <td class="table__cell"></td>
+        <td class="table__cell"></td>
+      </tr>
+    </table>
 
-  <footer class="main__footer"></footer>
-</body>
-
+    <footer class="page__footer"></footer>
+  </body>
 </html>
+
+
+<style>
+  .page {
+    border: 5px solid black;
+  }
+
+  .page__nav {
+    background-color: green;
+    height: 200px;
+  }
+
+  .page__content {
+    background-color: yellow;
+    height: 200px;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  .page__footer {
+    background-color: blue;
+    height: 100px;
+  }
+
+  .button {
+    background-color: blue;
+    border-radius: 6px;
+    width: 200px;
+    height: 80px;
+    color: white;
+    font-size: 32px;
+    border: none;
+  }
+
+  .button--red {
+    background-color: red;
+  }
+</style>
