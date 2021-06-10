@@ -1,0 +1,101 @@
+<!-- https://www.w3schools.com/css/css3_animations.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="ball">
+    <div class="red-half"></div>
+    <div class="blue-half"></div>
+  </div>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  /* .ball {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate(-100px, -100px)
+  } */
+
+  .ball {
+    margin-top: 0px;
+    display: flex;
+    border: 4px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* animation-name: falling;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; */
+    animation: falling 10s linear forwards 1s
+
+  }
+
+  .red-half {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+  }
+
+  .blue-half {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+  }
+
+  @keyframes rolling {
+    from {
+      margin-left: 0;
+      transform: rotate(0deg);
+    }
+
+    to {
+      margin-left: calc(100% - 200px);
+      transform: rotate(300deg);
+    }
+  }
+
+  @keyframes falling {
+    0% { margin-top: 0px }
+    5% { margin-top: 552px }
+    10% { margin-top: 200px }
+    15% { margin-top: 552px }
+    20% { margin-top: 210px }
+    25% { margin-top: 552px }
+    30% { margin-top: 230px }
+    35% { margin-top: 552px }
+    40% { margin-top: 260px }
+    45% { margin-top: 552px }
+    50% { margin-top: 300px }
+    55% { margin-top: 552px }
+    60% { margin-top: 340px }
+    65% { margin-top: 552px }
+    70% { margin-top: 390px }
+    75% { margin-top: 552px }
+    80% { margin-top: 450px }
+    85% { margin-top: 552px }
+    90% { margin-top: 510px }
+    95% { margin-top: 552px }
+    100% { margin-top: 552px }
+  }
+</style>
